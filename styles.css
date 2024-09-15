@@ -1,0 +1,258 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1E1E1E;
+    color: #EEEEEE;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: #EEEEEE;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Overlay Menu */
+.overlay-menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.overlay-menu ul li {
+    margin: 20px 0;
+}
+
+.overlay-menu ul li a {
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.overlay-menu ul li a:hover {
+    color: #2EC4B6;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%; /* Ensure main does not exceed viewport width */
+}
+
+h1, h2 {
+    color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word; /* Prevent long words from overflowing */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00ADB5;
+}
+
+/* Text Block */
+.text-block {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    border-radius: 5px;
+    text-align: justify;
+}
+
+/* Services Multi-Box */
+.multi-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.multi-box p {
+    flex-basis: 30%;
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Responsive Multi-Box */
+@media (max-width: 600px) {
+    .multi-box p {
+        flex-basis: 100%; /* Adjust for smaller screens */
+        margin: 10px 0;
+    }
+}
+
+/* Scroll Containers */
+.scroll-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+/* Hide Scrollbar */
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Playlists */
+.scroll-list, #masters-playlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    list-style-type: none;
+    width: 100%;
+}
+
+.scroll-list li, #masters-playlist li {
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    overflow-wrap: break-word; /* Prevent long text from overflowing */
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.scroll-list li:hover, #masters-playlist li:hover {
+    background-color: #2EC4B6;
+}
+
+/* Active song animation */
+@keyframes colorTransition {
+    0% {
+        background-color: #393E46;
+    }
+    50% {
+        background-color: #2EC4B6;
+    }
+    100% {
+        background-color: #393E46;
+    }
+}
+
+/* Class to apply the animation when a song is playing */
+.visualizer-active-text {
+    animation: colorTransition 2s infinite ease-in-out;
+    font-weight: bold; /* This adds some visual emphasis on the active song */
+}
+
+/* Audio Players */
+audio {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 700px;
+    height: 60px;
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Banner for Servicios Section */
+.banner {
+    /* width: 100vw; /* Full viewport width */
+    height: 200px; /* Adjust this height as needed */
+    background-image: url('photos/microfono.jpg'); /* Path to the image */
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: 50% 50% !important; /* Center the image both horizontally and vertically */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex; /* Flexbox to align any content inside if needed */
+    justify-content: center; /* Center any content horizontally */
+    align-items: center; /* Center any content vertically */
+    position: relative;
+    margin-top: 5px; /* Add some spacing above */
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
+

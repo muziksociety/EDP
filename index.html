@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Estudio del Pueblo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+        </nav>
+        <!-- Overlay Menu -->
+        <div id="overlay-menu" class="overlay-menu">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#instrumentales">Instrumentales</a></li>
+                <li><a href="#masters">Masters</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="home"></section>
+
+        <section id="about">
+            <h2>Nosotros</h2>
+            <div class="text-block">
+                <p>En el Estudio del Pueblo, somos más que un estudio de grabación; somos el pilar fundamental del desarrollo de la nueva escuela de talentos musicales en la industria de la música latina.</p>
+                <p>Nos especializamos en el desarrollo artístico de nuevos talentos, producción musical y grabación de videos musicales, ayudando a nuestros clientes a crear su producto artístico desde cero.</p>
+                <p>Lo que nos hace únicos es que nos diferenciamos por trabajar con la parte de la industria a la cual los demás estudios le dan la espalda.</p>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="multi-box">
+                <p>Producción Musical</p>
+                <p>Mezcla</p>
+                <p>Masterización</p>
+                <p>Consultoría</p>
+                <p>Desarrollo Artístico</p>
+            </div>
+            <!-- Banner Section -->
+            <section class="banner">
+                <div class="banner">
+                    <!-- Optional content inside the banner -->
+                </div>
+            </section>
+        </section>
+
+        <section id="instrumentales">
+            <h2>INSTRUMENTALES</h2>
+            <!-- Audio player for Instrumentales -->
+            <audio id="audio-player" controls style="background: none; border: none; box-shadow: none;">
+                <source id="audio-source" src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Ceres%2084.mp3?raw=true" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Playlist -->
+            <div class="scroll-container">
+                <ul id="playlist" class="scroll-list">
+                    <li id="song-1" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Ceres%2084.mp3?raw=true">Ceres</li>
+                    <li id="song-2" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Deimos%2093.mp3?raw=true">Deimos</li>
+                    <li id="song-3" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/GATO.mp3?raw=true">GATO</li>
+                    <li id="song-4" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Ganymede%2095.mp3?raw=true">Ganymede</li>
+                    <li id="song-5" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Halley%20140.mp3?raw=true">Halley</li>
+                    <li id="song-6" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Juno.mp3?raw=true">Juno</li>
+                    <li id="song-7" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Kuiper%2090.mp3?raw=true">Kuiper</li>
+                    <li id="song-8" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/LIBELULA.mp3?raw=true">LIBELULA</li>
+                    <li id="song-9" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Sedna%2098.mp3?raw=true">Sedna</li>
+                    <li id="song-10" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/TORO.mp3?raw=true">TORO</li>
+                    <li id="song-11" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/Venus%2099.mp3?raw=true">Venus</li>
+                    <li id="song-12" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/andromeda%2096.mp3?raw=true">Andromeda</li>
+                    <li id="song-13" data-src="https://github.com/muziksociety/EDP/blob/main/INSTRUMENTALS/tipo%20zion%20sin%20terminar.mp3?raw=true">Tipo Zion Sin Terminar</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="masters">
+            <h2>MASTERS</h2>
+            <!-- Audio player for Masters -->
+            <audio id="masters-audio-player" controls style="background: none; border: none; box-shadow: none;">
+                <source id="masters-audio-source" src="https://github.com/muziksociety/EDP/blob/main/MASTERS/RADY%20-%20IM%20BLESS.mp3?raw=true" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Playlist -->
+            <div class="scroll-container">
+                <ul id="masters-playlist" class="scroll-list">
+                    <li id="master-song-1" data-src="https://github.com/muziksociety/EDP/blob/main/MASTERS/EL%20KUNS%20-%20ACTIVAO.mp3?raw=true" data-name="El Kuns - Activao">El Kuns - Activao</li>
+                    <li id="master-song-2" data-src="https://github.com/muziksociety/EDP/blob/main/MASTERS/LURANTON%20-%20ME%20LE%20PEGUE.mp3?raw=true" data-name="Luranton - Me Le Pegue">Luranton - Me Le Pegue</li>
+                    <li id="master-song-3" data-src="https://github.com/muziksociety/EDP/blob/main/MASTERS/MASTER%20DRAFT%202%20-%20RADY%20-%20IM%20BLESSED.mp3?raw=true" data-name="Rady - I'm Blessed">Rady - I'm Blessed</li>
+                    <li id="master-song-4" data-src="https://github.com/muziksociety/EDP/blob/main/MASTERS/PEPIN%20LA%20J%20-%20IMPACTO.mp3?raw=true" data-name="Pepin la J - Impacto">Pepin la J - Impacto</li>
+                    <li id="master-song-5" data-src="https://github.com/muziksociety/EDP/blob/main/MASTERS/VASTIAN%20-%20CARMESI.mp3?raw=true" data-name="Vastian - Carmesi">Vastian - Carmesi</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Estudio del Pueblo. Todos los Derechos Reservados.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
